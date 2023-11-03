@@ -11,6 +11,7 @@
 		7AEB69E92AF528A300A2FEBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB69E82AF528A300A2FEBC /* ContentView.swift */; };
 		7AEB69EB2AF528A400A2FEBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AEB69EA2AF528A400A2FEBC /* Assets.xcassets */; };
 		7AEB69EE2AF528A400A2FEBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AEB69ED2AF528A400A2FEBC /* Preview Assets.xcassets */; };
+		7AEB69F52AF52C4500A2FEBC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB69F42AF52C4500A2FEBC /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		7AEB69E82AF528A300A2FEBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7AEB69EA2AF528A400A2FEBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AEB69ED2AF528A400A2FEBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7AEB69F42AF52C4500A2FEBC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				7AEB69E62AF528A300A2FEBC /* War_GameApp.swift */,
 				7AEB69E82AF528A300A2FEBC /* ContentView.swift */,
+				7AEB69F42AF52C4500A2FEBC /* Result.swift */,
 				7AEB69EA2AF528A400A2FEBC /* Assets.xcassets */,
 				7AEB69EC2AF528A400A2FEBC /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AEB69F52AF52C4500A2FEBC /* Result.swift in Sources */,
 				7AEB69E92AF528A300A2FEBC /* ContentView.swift in Sources */,
 				7AEB69E72AF528A300A2FEBC /* War_GameApp.swift in Sources */,
 			);
