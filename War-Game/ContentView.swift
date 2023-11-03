@@ -105,8 +105,6 @@ struct ContentView: View {
             cpuScore += 1
         }
         
-        
-        // ako nqkoj napravi 20 tochki zapiswame resultata w nowoto view i resetwame score = 0
         if playerScore == 10 {
             playerWins += 1
         }
