@@ -13,7 +13,7 @@ struct Result: View {
     @Binding var cpuWins: Int
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             
             ZStack{
                 
@@ -22,22 +22,12 @@ struct Result: View {
                     .ignoresSafeArea()
                 
                 VStack{
-                    
                     Text("The result is:").bold()
                     Text("\(playerWins) Wins for player").bold()
                     Text("\(cpuWins) Wins for cpu").bold()
-                    
-                    
-                    
-                    
-                    NavigationLink(destination: ContentView()){
-                        Text("Back to the game").frame(width: 200, height: 100).foregroundColor(.black).bold().font(.largeTitle).background(Color .gray).cornerRadius(150)
-                    }
                 }
                 .foregroundColor(.white)
             }
-            
-            
         }
     }
 }

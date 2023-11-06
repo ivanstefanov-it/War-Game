@@ -18,11 +18,11 @@ struct ContentView: View {
     @State var playerWins = 0
     @State var cpuWins = 0
     
+    @State private var path = NavigationPath()
+    
     var body: some View {
         
-        
-        NavigationView{
-            
+        NavigationStack(path: $path){
             
         ZStack{
             
@@ -35,7 +35,6 @@ struct ContentView: View {
                 Image("logo")
                 
                 HStack{
-                    
                     Spacer()
                     Image(playerCard)
                     Spacer()
@@ -44,7 +43,6 @@ struct ContentView: View {
                 }
                 
                 Spacer()
-                
                 
                 Button{
                     deal()
@@ -55,7 +53,7 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack{
-                          Spacer()
+                    Spacer()
                     
                     VStack{
                         Text("Player")
@@ -80,13 +78,10 @@ struct ContentView: View {
                 
                Spacer()
                 
-                
-                    NavigationLink(destination: Result(playerWins: $playerWins, cpuWins: $cpuWins)){
-                        Text("Result").frame(width: 280, height: 50).foregroundColor(.white).bold().font(.largeTitle).background(Color .blue).cornerRadius(75)
+               NavigationLink(destination: Result(playerWins: $playerWins, cpuWins: $cpuWins)){
+               Text("Result").frame(width: 280, height: 50).foregroundColor(.white).bold().font(.largeTitle).background(Color .blue).cornerRadius(75)
                     }
                 }
-            
-            
             }
         }
     }
